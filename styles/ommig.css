@@ -1,0 +1,29 @@
+/*----------OMMIG.HTML-----------*/
+
+.section_wrapper {
+  margin: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  padding-top: 100px;
+}
+
+@media (min-width: 720px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+  }
+
+  .section_wrapper {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .billede img {
+    margin-bottom: 1rem;
+    padding-top: 100px;
+  }
+}

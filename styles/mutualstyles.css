@@ -1,0 +1,117 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: normalidad-extended, sans-serif;
+  /*vælg 400 eller 700*/
+  font-weight: 700;
+
+  font-style: normal;
+  color: #0348c9;
+}
+
+p,
+a {
+  color: #0348c9;
+  font-family: runda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(250, 207, 214);
+}
+
+/*-----------NAVIGATION------------*/
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  /* display: flex;
+  justify-content: end; */
+}
+nav {
+  top: 0;
+  right: 0;
+  display: flex;
+  transition: 0.4s;
+  transform: translateX(100%);
+  justify-content: end;
+}
+
+.burger_container {
+  width: 100%;
+}
+
+.burger {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  /*gennemsigtig baggrund uden kant*/
+  background: transparent;
+  border: none;
+
+  /*ikonets præcise størrelse*/
+  aspect-ratio: 50/48;
+
+  /*musen bliver til en pegefinger når man kører den over ikonet*/
+  cursor: pointer;
+
+  /*Menuen skal altid ligge forest*/
+  z-index: 10;
+
+  /*Menuen skal følge med når man scroller*/
+  position: fixed;
+}
+
+nav.shown {
+  /* top: 0;
+  left: 0; */
+  transform: none;
+  background-color: white;
+  height: 100vh;
+  width: 40vh;
+  display: grid;
+  place-content: center;
+}
+
+header nav ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 1rem;
+  z-index: 4;
+}
+
+li {
+  padding: 1rem;
+}
+
+/* .burger {
+  display: block;
+} */
+
+.burger_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  border-top: 3px solid rgb(250, 207, 214);
+  margin: 1rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
