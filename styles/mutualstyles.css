@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -20,8 +24,17 @@ h4 {
   color: #0348c9;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
 p,
-a {
+a,
+li {
   color: #0348c9;
   font-family: runda, sans-serif;
   font-weight: 400;
@@ -33,14 +46,15 @@ a {
 }
 
 a:hover {
-  color: rgb(250, 207, 214);
+  color: rgba(253, 197, 246, 0.185);
 }
 
 /*-----------NAVIGATION------------*/
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
+  height: auto;
   /* display: flex;
   justify-content: end; */
 }
@@ -81,7 +95,7 @@ nav.shown {
   /* top: 0;
   left: 0; */
   transform: none;
-  background-color: white;
+  background-color: rgb(233, 246, 252);
   height: 100vh;
   width: 40vh;
   display: grid;

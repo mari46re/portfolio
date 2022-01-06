@@ -102,25 +102,25 @@ video {
 #ommig {
   /*Baggrundsfarven er kun synlig, hvis billederne loader langsomt*/
   background-color: rgb(250, 210, 145);
-  background-image: url("/ommig.png");
+  background-image: url("/ommig.webp");
   background-size: cover;
 }
 
 #tema2 {
   background-color: rgb(218, 218, 248);
-  background-image: url("/tema2.png");
+  background-image: url("/tema2.webp");
   background-size: cover;
 }
 
 #tema3 {
   background: rgb(208, 232, 243);
-  background-image: url("/tema3.png");
+  background-image: url("/tema3.webp");
   background-size: cover;
 }
 
 #tema4 {
   background-color: rgb(250, 207, 214);
-  background-image: url("/tema4.png");
+  background-image: url("/tema4.webp");
   background-size: cover;
 }
 
