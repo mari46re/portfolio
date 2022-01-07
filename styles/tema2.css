@@ -3,8 +3,17 @@
   src: url(fonts/michroma-regular-webfont.woff2) format("woff2");
 }
 
+.opgave {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
 .section_wrapper,
-.section_wrapper2 {
+.section_wrapper2,
+.section_wrapper3,
+#omsplash,
+.boot {
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -15,61 +24,101 @@
 }
 
 #tema2 {
-  background-color: rgba(253, 197, 246, 0.185);
-  /* background-image: url("mig.png");
-  background-size: cover;*/
+  /* background-color: rgba(253, 197, 246, 0.185); */
+  background-image: url(/tema2bg2.png);
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 }
 
-/* #tema2 {
-  margin: 2rem;
-} */
-
 @media (min-width: 720px) {
+  /*ALLE SEKTIONER*/
   section {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
   }
 
+  /*TEMA INTRO*/
   .section_wrapper {
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-  /* .section_wrapper p
-  /* #tema2 h1 { */
-  /* {
-    padding-top: 150px;
-  } */
+
+  /*H1 og brødteksten skal begge dele centrere sig på den vertikale akse*/
   #tema2 h1,
   .section_wrapper p {
     display: flex;
     align-items: center;
     gap: 30px;
+    padding-top: 0;
   }
 
+  /*STYLETILE*/
+  /*Section_wrapper for styletile, med selve styletile i 2. colonne*/
   .section_wrapper2 {
     grid-column: 2;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
+  /*Teksten om styletile skal centrere sig på den vertikale akse*/
+  #omst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*SPLASH-SECTION*/
+  /*Kode, så billede og tekst ligger sig ved siden af hinanden*/
+  .section_wrapper3 {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  #omsplash {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .boot {
+    grid-column: 2;
+  }
+
+  .boot img {
+    width: 80%;
+  }
 }
 
+/* Hr = den streg der er over overskrifterne i styletile*/
 hr {
   margin-bottom: 1rem;
 }
 
+/*----------Om styletile------------*/
 #omst {
   margin-bottom: 2rem;
 }
 
-#omst h2 {
+#omst h2,
+#splash h2,
+#omsplash p {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+
+/*----------Styletile--------*/
 
 #st {
   margin-top: 1rem;
@@ -115,4 +164,32 @@ hr {
 
 .ikon {
   width: 20%;
+}
+
+/*----------Splash-section-----------*/
+
+#splash img {
+  margin-top: 2rem;
+}
+
+#splash {
+  background-color: rgba(253, 197, 246, 0.185);
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.boot {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.boot p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pic {
+  display: flex;
+  justify-content: center;
 }

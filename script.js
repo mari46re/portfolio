@@ -15,8 +15,8 @@ function toggleBurger() {
   // 2. Toggle en klasse, der hedder "shown"
   nav.classList.toggle("nav");
   nav.classList.toggle("shown");
-  bknap.classList.toggle("bknap");
-  bknap.classList.toggle("white");
+  // bknap.classList.toggle("bknap");
+  // bknap.classList.toggle("white");
 }
 
 // //Hvis skærmen er under 720 px, har menuen en hvid baggrund. Ellers fjernes den hvide baggrund
