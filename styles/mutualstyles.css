@@ -8,7 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
+img,
+video {
   max-width: 100%;
 }
 
@@ -31,6 +32,23 @@ nav ul li a {
   display: flex;
   justify-content: center;
   margin: 3rem;
+}
+
+.section_wrapper,
+.section_wrapper2,
+.section_wrapper3,
+.section_wrapper4,
+.section_wrapper5 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 720px) {
+  /*ALLE SEKTIONER*/
+  section {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+  }
 }
 
 h1 {

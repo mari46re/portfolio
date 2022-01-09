@@ -3,15 +3,6 @@
   src: url(fonts/michroma-regular-webfont.woff2) format("woff2");
 }
 
-.opgave {
-  display: flex;
-  justify-content: center;
-  margin: 3rem;
-}
-
-.section_wrapper,
-.section_wrapper2,
-.section_wrapper3,
 #omsplash,
 .boot {
   margin-left: 2rem;
@@ -32,12 +23,6 @@
 }
 
 @media (min-width: 720px) {
-  /*ALLE SEKTIONER*/
-  section {
-    display: grid;
-    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
-  }
-
   /*TEMA INTRO*/
   .section_wrapper {
     grid-column: 2;
@@ -94,10 +79,14 @@
 
   .boot {
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
-  .boot img {
-    width: 80%;
+  #pic img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -180,13 +169,17 @@ hr {
 
 .boot {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.boot p {
+#stoevle {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#stoevle img {
+  margin-bottom: 1rem;
 }
 
 #pic {

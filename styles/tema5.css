@@ -1,0 +1,35 @@
+#tema5 {
+  background-image: url(/tema5bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#tema5 h1 {
+  margin-bottom: 1rem;
+  padding-top: 100px;
+}
+
+video {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 720px) {
+  /*TEMA INTRO*/
+  .section_wrapper {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  /*H1 og brødteksten skal begge dele centrere sig på den vertikale akse*/
+  #tema5 h1,
+  .section_wrapper p {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0;
+  }
+}
