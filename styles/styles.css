@@ -126,8 +126,12 @@ video {
 
 #tema5 {
   background-color: papayawhip;
+  background-image: url("/kaffe.png");
+  background-size: cover;
 }
 
 #tema6 {
   background-color: rgb(220, 248, 255);
+  background-image: url("/tema6.png");
+  background-size: cover;
 }

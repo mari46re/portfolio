@@ -49,6 +49,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+
+  .section_wrapper2 a img {
+    grid-column: 2;
+  }
   .section_wrapper3 {
     grid-column: 2;
     display: grid;
@@ -93,7 +97,7 @@
   }
 }
 
-#txt a:hover {
+#link:hover {
   opacity: 50%;
 }
 

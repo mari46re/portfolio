@@ -1,0 +1,153 @@
+#tema6 {
+  background-image: url(/tema6bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#tema6 h1 {
+  margin-bottom: 1rem;
+  padding-top: 100px;
+}
+
+#styletile h2,
+#splashvideo h2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 720px) {
+  /*TEMA INTRO*/
+  .section_wrapper {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  #tema6 h1,
+  .section_wrapper p {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0;
+  }
+
+  .section_wrapper2 {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #styletile h2,
+  #splashvideo h2 {
+    grid-column: 2;
+  }
+
+  .section_wrapper3 {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .section_wrapper4 {
+    grid-column: 2;
+  }
+
+  .section_wrapper4 p {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  .billeder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+#splashvideo h2,
+.section_wrapper4 p {
+  display: flex;
+  justify-content: center;
+}
+
+.section_wrapper2 {
+  border: 1px solid #0348c9;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#list {
+  list-style: none;
+  display: flex;
+}
+
+.details {
+  margin: 1rem;
+}
+
+.details h3 {
+  margin-top: 1rem;
+}
+
+hr {
+  border-top: 3px solid rgba(253, 197, 246, 0.185);
+  margin-top: 1rem;
+}
+
+.color {
+  height: 50px;
+  width: 50px;
+  border: 3px solid #fff;
+  box-shadow: 4px 4px 4px rgba(189, 189, 188, 0.747);
+}
+
+.color_1 {
+  background: #0348c9;
+}
+.color_2 {
+  background: rgba(253, 197, 246, 0.185);
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 1rem;
+}
+
+video,
+.ikon,
+.details h1 {
+  margin-top: 1rem;
+}
+
+#splashvideo {
+  background-color: rgba(253, 197, 246, 0.185);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#splashvideo h2 {
+  margin-top: 1rem;
+}
+
+.section_wrapper3 img {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #0348c9;
+}
+.billeder {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
