@@ -182,3 +182,7 @@ hr {
   display: flex;
   justify-content: center;
 }
+
+#omst a:hover {
+  opacity: 50%;
+}

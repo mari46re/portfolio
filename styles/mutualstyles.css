@@ -26,7 +26,7 @@ h3,
 h4,
 ul li a {
   font-family: normalidad-extended, sans-serif;
-  /*vælg 400 eller 700*/
+
   font-weight: 700;
 
   font-style: normal;
@@ -59,7 +59,6 @@ ul li a {
 
   /*PIL*/
   .pil_container {
-    top: 88%;
     left: 50%;
     position: absolute;
   }
@@ -69,34 +68,16 @@ ul li a {
     font-size: 1rem;
     line-height: 1.2;
   }
-  .pil_container {
-    animation-name: pulse_kf;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
 
-  @keyframes pulse_kf {
-    0%,
-    100% {
-      /* transform: scale(1); */
-      transform: translateY(0%);
-    }
-    50% {
-      /* transform: scale(1.2); */
-      transform: translateY(90%);
-    }
-  }
   nav {
     width: 70vh;
     height: 100vh;
   }
 }
 
-/*Pilen blev nødt til at have to mediaqueries, da den ene benytter flex og den anden benytter top og left*/
+/*Pilen har to mediaqueries, for at kunne styre left*/
 @media (max-width: 720px) {
   .pil_container {
-    top: 90%;
     left: 40%;
     position: absolute;
   }
@@ -105,24 +86,6 @@ ul li a {
   #tema4 h1 {
     font-size: 1.8rem;
   }
-  .pil_container {
-    animation-name: pulse_kf;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  @keyframes pulse_kf {
-    0%,
-    100% {
-      /* transform: scale(1); */
-      transform: translateY(0%);
-    }
-    50% {
-      /* transform: scale(1.2); */
-      transform: translateY(90%);
-    }
-  }
 
   nav {
     width: 40vh;
@@ -130,8 +93,27 @@ ul li a {
   }
 }
 
+.pil_container {
+  animation-name: pulse_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: 88%;
+}
+
+@keyframes pulse_kf {
+  0%,
+  100% {
+    /* transform: scale(1); */
+    transform: translateY(0%);
+  }
+  50% {
+    /* transform: scale(1.2); */
+    transform: translateY(90%);
+  }
+}
+
 #pil {
-  max-width: none;
   width: 80px;
 }
 
@@ -170,9 +152,6 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  height: auto;
-  /* display: flex;
-  justify-content: end; */
 }
 nav {
   top: 0;
@@ -180,10 +159,8 @@ nav {
   display: flex;
   transition: 0.4s;
   transform: translateX(100%);
-  /* justify-content: end; */
+  /*Nav ud af flow for ikke at forstyrre*/
   position: absolute;
-  /* height: 100vh;
-  width: 40vh; */
   place-content: center;
   display: grid;
   background-color: rgba(252, 237, 250, 0.89);
@@ -202,9 +179,6 @@ nav {
   background: transparent;
   border: none;
 
-  /*ikonets præcise størrelse*/
-  aspect-ratio: 50/48;
-
   /*musen bliver til en pegefinger når man kører den over ikonet*/
   cursor: pointer;
 
@@ -216,9 +190,8 @@ nav {
 }
 
 nav.shown {
-  /**/
+  /*Den skal transformeres tilbage til square one*/
   transform: translateX(0%);
-  /* transform: none; */
 }
 
 header nav ul {
@@ -232,10 +205,6 @@ li {
   padding: 1rem;
 }
 
-/* .burger {
-  display: block;
-} */
-
 .burger_container {
   display: flex;
   justify-content: flex-end;
@@ -247,8 +216,13 @@ footer {
   padding: 3rem;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .ikon {
   width: 20%;
+}
+
+.hover:hover {
+  opacity: 50%;
 }

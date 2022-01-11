@@ -19,11 +19,18 @@ video {
   /*TEMA INTRO*/
   .section_wrapper,
   .section_wrapper3,
-  .section_wrapper4 {
+  .section_wrapper4,
+  .section_wrapper5 {
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+  }
+
+  #overskrift {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
   }
 
   /*H1 og brødteksten skal begge dele centrere sig på den vertikale akse*/
@@ -55,16 +62,19 @@ video {
     height: 98%;
     object-fit: cover;
   }
+
+  #vid,
+  .section_wrapper3 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .billeder,
 .billeder2 {
   margin-left: 2rem;
   margin-right: 2rem;
-}
-
-.section_wrapper4 a:hover {
-  filter: opacity(50%);
 }
 
 .section_wrapper4 {
@@ -76,4 +86,13 @@ video {
 .section_wrapper4 img {
   margin: 1rem;
   border: 1px solid #0348c9;
+}
+#proto img,
+#vid video {
+  margin-top: 1rem;
+  border: 1px solid #0348c9;
+}
+
+.billeder {
+  margin-top: 2rem;
 }

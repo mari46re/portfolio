@@ -135,10 +135,6 @@
   margin-bottom: 1rem;
 }
 
-.section_wrapper2 a:hover {
-  filter: opacity(50%);
-}
-
 /*Uddraget af interviewet har en lyserød baggrund*/
 #interview {
   padding: 2rem;
