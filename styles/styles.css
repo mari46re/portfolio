@@ -95,25 +95,25 @@ video {
 }
 
 #ommig {
-  background-image: url("/ommig.webp");
+  background-image: url(ommig.webp);
 }
 
 #tema2 {
-  background-image: url("/tema2.webp");
+  background-image: url(tema2.webp);
 }
 
 #tema3 {
-  background-image: url("/tema3.webp");
+  background-image: url(tema3.webp);
 }
 
 #tema4 {
-  background-image: url("/tema4.webp");
+  background-image: url(tema4.webp);
 }
 
 #tema5 {
-  background-image: url("/kaffe.webp");
+  background-image: url(kaffe.webp);
 }
 
 #tema6 {
-  background-image: url("/tema6.png");
+  background-image: url(tema6.png);
 }

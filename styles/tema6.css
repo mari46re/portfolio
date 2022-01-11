@@ -1,5 +1,5 @@
 #tema6 {
-  background-image: url(/tema6bg.png);
+  background-image: url("tema6bg.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
